@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://kit.fontawesome.com/3cdb663493.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courgette&family=Josefin+Sans&family=Montserrat:ital,wght@0,100;0,400;0,900;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">    <title>COLOR EXTRACTOR</title>
+    <title>COLOR CANVAS</title>
+</head>
+<body>
+     <br><br><br><br><br><br><br>
+     <h1>Color Canvas</h1>
+     <h5>Your Image,Your Palette</h5>
+     <p class="description">Welcome to Color Canvas, where we turn your images into captivating color stories. Upload your photos, and our advanced color extraction tool will reveal the dominant hues within each pixel. Explore the vibrant spectrum hidden in your visuals, and use the generated color palettes to add a touch of magic to your designs, artworks, and memories. Discover the beauty in every hue and paint your world with the colors of ChromaPalette.</p>
+<form action="/image_to_color" method="post" enctype="multipart/form-data">
+    <input type="file"  name="image" accept="image/*" >
+    <button type="submit">Submit</button>
+</form>
+</body>

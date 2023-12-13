@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://kit.fontawesome.com/3cdb663493.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courgette&family=Josefin+Sans&family=Montserrat:ital,wght@0,100;0,400;0,900;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">    <title>COLOR EXTRACTOR</title>
+    <title>COLOR CANVAS</title>
+</head>
+<body>
+     <h1>Color Canvas</h1>
+     <h5>Your Image,Your Palette</h5>
+<div>
+    <img class="image" src="{{url_for('static',filename='temp_img.jpeg')}}" alt="uploaded image">
+</div>
+{% for color in get_top_colors%}
+<div class="color_palette" style="background-color:{{color}};width:100px;height:100px;display:inline-block;margin:5px;">
+
+      <p>
+          {{color}}<br>
+      </p>
+</div>
+{% endfor %}
+</body>

@@ -1,0 +1,37 @@
+body{
+     text-align:center;
+}
+p{
+     margin:40px 0;
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:4rem;
+    margin:50px 0 0;
+    /* Create a gradient that transitions between multiple colors */
+
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* Ensure the gradient covers only the text */
+
+
+}
+h5{
+    font-size:1.5rem;
+    margin-top:0;
+    color:grey;
+}
+input{
+    margin-top:100px;
+}
+.description{
+   margin:0 400px !important;
+}
+
+.image{
+       width:400px;
+       height:auto;
+       margin-bottom:40px;
+}
+
